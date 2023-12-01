@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle medium shade4"></div>
+        <div class="circle small shade5"></div>
+
+        <nav>
+            <div class="logo">CarrerClick</div>
+            <ul>
+              <li><a href="/index" >Dashboard</a></li>
+              <li><a href="/job">Jobs</a></li>
+              <li><a href="/about">About Us</a></li>
+              <!-- <li><a href="#">Profile</a></li> -->
+              <li><a href="#" class="active">Login</a></li>
+            </ul>
+          </nav>
+
+
+
+          <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <form id="loginForm" class="form-group" action="/login" method="post">
+            <h3>Login Here</h3>
+      
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username" name="username" required>
+
+            
+            
+    
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            
+    
+            <button>Log In</button>
+            <div class="social">
+              <div class="go"><i class="fab fa-google"></i>  Google</div>
+              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+            </div>
+
+
+
+            <div class="req">
+                <a href="/register" id="showSignupForm" style="margin-top: 40px"
+                  >Sign Up</a
+                >
+                <a href="/forget_password" id="showForgotPasswordForm"
+                  >Forgot Password?</a>
+            </div>
+        </form>
+
+
+        
+
+
+
+    <!-- <div class="container">
+      <div class="login-form-container">
+        <h2>Login</h2>
+
+        <form id="loginForm" class="form-group" action="/login" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+
+        <div>
+          <a href="/register" id="showSignupForm" style="margin-right: 20px"
+            >Sign Up</a
+          >
+          <a href="/forget_password" id="showForgotPasswordForm"
+            >Forgot Password?</a
+          >
+        </div>
+      </div>
+    </div> -->
+
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,475 @@
+/* Reset some default styles */
+
+/* Add background animation */
+
+body{
+    background: rgb(101, 162, 223);
+  }
+  
+  
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+  
+  .small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.1;
+  }
+  
+  .shade3{
+    opacity: 0.3;
+  }
+  
+  .shade4{
+    opacity: 0.3;
+  }
+  
+  .shade5{
+    opacity: 0.3;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+  
+
+
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+   
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styles */
+  nav {
+  
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Dashboard styles */
+  .dashboard {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Recommendations section styles */
+  .recommendations {
+    flex: 1;
+    background-color: #fff;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .job-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .job-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .apply-btn {
+    background-color: #4285f4;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-btn:hover {
+    background-color: #3367d6;
+  }
+  
+  /* Recent Applications section styles */
+  .recent-applications {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recent-applications h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .application-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .application-card h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Company List styles */
+  .company-list {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .company-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .company-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+  
+    .recommendations,
+    .recent-applications,
+    .company-list {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .sidebar {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Add more responsive styles as needed */
+/* Add more styles for the remaining sections of the dashboard */
+.recommendations {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .recommendation-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .recommendation-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .recommendation-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  /* Add animation for the company cards */
+  @keyframes fadeInUp {
+    from {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .company-card {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  /* Add some general styles for the page */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  /* Add any other global styles as needed */
+/* Add more styles for the remaining sections of the dashboard */
+.recommendations {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .recommendation-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .recommendation-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .recommendation-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  /* Add animation for the company cards */
+  @keyframes fadeInUp {
+    from {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .company-card {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  /* Add some general styles for the page */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  /* Add scroll styles */
+  .scrollable-content {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrollbar for content */
+    padding: 20px;
+    max-height: calc(100vh - 40px); /* Set max height for scrolling content */
+  }
+  
+  /* Add any other global styles as needed */
+
+  /* Add styles for the additional sections */
+.recommendations,
+.companies {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h2,
+.companies h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-apply,
+.btn-view {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-apply:hover,
+.btn-view:hover {
+  background-color: #45a049;
+}
+
+/* Additional styling for the new recommendation and company cards */
+.recommendation-details,
+.company-details {
+  flex: 1;
+}
+
+.recommendation-details h3,
+.company-details h3 {
+  margin: 0;
+}
+
+/* Ensure proper spacing between recommendation and company cards */
+.recommendation-card,
+.company-card {
+  margin-bottom: 15px;
+}
